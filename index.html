@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            
+            <div class="logo logo-class">
+                <img src="images/odin-lined.png" alt="logo" class="logo">
+                <span class="p-1">ODIN</span>
+            </div>
+            <div class="logo-background-color"></div>
+        </div>
+        <div class="right">
+            <div class="frist-section">
+                <div class="fri-h3">
+                    <h2>
+                        This is a not real online service! you know you need something <br>
+                        like this in your life to help you realize your deepset dreams. <br>
+                        Sign up <span class="now">now</span> to get started.
+                    </h2>
+                </div>
+                <br><br>
+                <div class="sec-h3"><h2 class="look">You <span class="now">know </span> you want to</h2></div>
+            </div>
+            
+            <div class="second-section">
+                <h3 class="front-of-form">Let's do this!</h2>
+                <form action="#" method="post">
+                    <div class="frist-column">
+                        <div class="frist-name">
+                            <label for="frist-names">FRIST NAME</label>
+                            <input type="text" class="form-control" name="name" id="frist-names" required>
+                        </div>
+                        <div class="email">
+                            <label for="emails">E M A I L</label>
+                            <input type="email" class="form-control" name="email" id="emails" required>
+                        </div>
+                        <div class="password">
+                            <label for="passwords">P A S S W O R D</label>
+                            <input type="password" name="password"id="passwords" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="validation">
+                        </div>
+                    </div>
+                    <div class="second-column">
+                        <div class="last-name">
+                            <label for="last-names">LAST NAME</label>
+                            <input type="text" class="form-control" name="name" id="last-names" required>
+                        </div>
+                        <div class="phone-number">
+                            <label for="phone-numbers">PHONE NUMBER</label>
+                            <input type="text" name="number" id="phone-numbers" required>
+                        </div>
+                        <div class="confirm-password">
+                            <label for="confirm-passwords">CONFIRM PASSWORD</label>
+                            <input type="password" name="passwords"id="confirm-passwords" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                        </div>
+                    </div>
+                    <div class="third-section">
+                        <input type="submit" value="Create Account">
+                        <p class="log-in">Already heve an Account?<a href="#">Log in</a></p>
+                    </div>
+                </form>
+                <div class="line"></div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
